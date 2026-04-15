@@ -1,28 +1,18 @@
-import java.util.ArrayList;
+import java.util.HashSet;
 
-public class TrainBogies {
+public class UniqueBogieIDs {
 public static void main(String[] args) {
 
-        ArrayList<String> bogies = new ArrayList<>();
+        HashSet<String> bogieIDs = new HashSet<>();
 
-        bogies.add("Sleeper");
-        bogies.add("AC Chair");
-        bogies.add("First Class");
+        bogieIDs.add("BG101");
+        bogieIDs.add("BG102");
+        bogieIDs.add("BG103");
 
-        System.out.println("Bogies after adding:");
-        System.out.println(bogies);
+        bogieIDs.add("BG101");
+        bogieIDs.add("BG102");
 
-        bogies.remove("AC Chair");
-
-        System.out.println("Bogies after removing AC Chair:");
-        System.out.println(bogies);
-
-        if (bogies.contains("Sleeper")) {
-            System.out.println("Sleeper bogie exists");
-        } else {
-            System.out.println("Sleeper bogie does not exist");
-        }
-
-        System.out.println("Final Bogies List:");
-        System.out.println(bogies);
+        System.out.println("Unique Bogie IDs:");
+        System.out.println(bogieIDs);
     }
+}
